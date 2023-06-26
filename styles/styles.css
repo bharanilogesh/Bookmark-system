@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-black: #333333;
+  --clr-white: #f3f3f3;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-attachment: var(--clr-white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+.tittle {
+  padding-left: 1rem;
+  color: rgba(58, 91, 91, 0.651);
+  border-bottom: 2px solid gray ;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 30rem;
+  flex-direction: column;
+  height: 30rem;
+  background-color: rgb(217, 215, 215);
+  margin: 2.5rem;
+}
+
+.form-tittle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.input {
+  gap: 2rem;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.name {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+.inputName {
+  width: 25rem;
+  height: 2rem;
+  margin-bottom: 12px;
+  padding: 1rem;
+}
+
+.msg-desc {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 58, 48);
+  height: 1.75rem; 
+  font-size: 1.1rem;
+}
+
+.btn-submit {
+  margin-left: 10rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: green;
+  color: #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.search-input {
+  width: 30rem;
+  height: 2rem;
+  padding: 0.75rem;
+  border-radius: 0.7rem;
+  box-sizing: content-box;
+  margin-left: 2rem;
+  border-color: rgb(99, 99, 189);
+}
+
+.output {
+  width: 100%;
+}
+
+.output-header li {
+  font-weight: 600;
+}
+
+.output-header li,
+.output-data li {
+  min-width: 420px;
+  height: 2.5rem;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  color: var(--clr-prussian-blue);
+  font-size: 1.1rem;
+}
+
+.output-header li div,
+.output-data li div {
+  width: 100%;
+  text-align: center;
+}
+
+.output-data li:nth-child(odd) {
+  background-color: var(--clr-gray);
+  filter: brightness(120%);
+  border: 5px solid var(--clr-gray);
+}
+.hidden {
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 420px) {
+  .form-title {
+    font-size: 1.2rem;
+  }
+}
+
